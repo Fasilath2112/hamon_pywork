@@ -1,13 +1,13 @@
 def freq(s):
-    dict1 = {}
+    dictionary = {}
     for char in s:
-        if char in dict1:
-            dict1[char] += 1
+        if char in dictionary:
+            dictionary[char] += 1
         else:
-            dict1[char] = 1
-    return dict1
+            dictionary[char] = 1
+    return dictionary
 
 if __name__ == '__main__':
-    str1 = input("Enter the string:")
-    result = freq(str1)
+    string = input("Enter the string:")
+    result = freq(string)
     print(result)  
